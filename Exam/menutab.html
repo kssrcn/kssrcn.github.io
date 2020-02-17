@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menuTab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .menubar {
+            width: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .menubar>li {
+            width: 100px;
+            text-align: center;
+            float: left;
+        }
+
+        .menubar>li>a {
+            display: block;
+            border: 1px solid black;
+        }
+
+        .menubar>li>a:hover {
+            background: black;
+            color: darksalmon;
+        }
+        .menubar>li>.menu1:hover~.tab_1{
+            display: block;
+        }
+
+        .tab {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid black;
+            height: 150px;
+            border-top: none;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menubar">
+        <li><a href="#" class="menu1">MENU1</a>
+           <div class="tab tab_1"></div></li>
+        <li><a href="#" class="menu2">MENU2</a></li>
+        <li><a href="#" class="menu3">MENU3</a></li>
+        <li><a href="#" class="menu4">MENU4</a></li>
+    </ul>
+       
+</body>
+</html>

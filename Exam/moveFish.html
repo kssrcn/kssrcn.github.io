@@ -68,7 +68,8 @@
         }
         
         function move_controller() {
-            window.nTimerID = setInterval(move_event,30);
+	    if(window.nTimerID!=0)
+            	window.nTimerID = setInterval(move_event,30);
         }
         function move_event(){
             nCurrentX +=nStep;

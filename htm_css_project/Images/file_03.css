@@ -1,0 +1,18 @@
+li{text-decoration: none;}
+
+
+@media(min-width:768px){
+    .box3{
+        float: left;
+        width:70%;
+    }
+    .box4{
+        float: left;
+        width:30%;
+    }
+    .boxA:after{
+        clear: both;
+        display:block;
+        content:'';
+    }
+}

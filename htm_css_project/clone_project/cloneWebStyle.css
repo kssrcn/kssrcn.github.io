@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+.headers{
+    border-bottom: 1px dotted black;
+}
+
+#nav_wrap{
+    margin: 0 auto;
+    width: 1300px;
+    height: 30px;
+    position: relative;
+}
+#nav{
+    top: 0; right: 0; 
+    position: absolute;
+}
+.menu_small{overflow: hidden;}
+.menu_small li{
+    float: left;
+    line-height: 30px;
+}
+.menu_small li a{
+    color: darkgrey;
+    font-weight: bold;
+    padding: 0px 8px;
+    border-right: 1px solid black;
+}
+
+#nav2_wrap{
+    margin: 0 auto;
+    width: 1300px;
+    height: 80px;
+    position: relative;
+}
+.header_image{
+    position: absolute;
+    left: 0; bottom: 27px;
+}
+.menu_big {
+    position: absolute;
+    right: 0;
+    width: 800px;
+}
+.menu_big li{
+    color: black;
+    font-weight: bold;
+    height: 80px;
+    line-height: 80px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    text-align: center;
+    width: 160px;
+    float: left;
+    border-left: 1px dotted black;
+}
+.last_li{
+    border-right: 1px dotted black;
+}
+.menu_big_sub{
+    position: absolute;
+    right: 0; top: 80px;
+    background: white;
+    width: 800px;
+    height: 120px;
+    text-align: center;
+}
+.menu_big_sub ul{
+    float: left;
+    font-weight: bold;
+    color:darkgrey;
+    border-right: 1px dotted black;
+    width: 160px;
+    box-sizing: border-box;
+    height: 120px;
+}
+.menu_big_sub ul li{
+    width: 160px;
+    box-sizing: border-box;
+}
+
+#content{
+    background: #d3d3d3;
+    height: 700px;
+}
+#main_section{
+    margin: 0 auto;
+    width: 1300px;
+}
+#footer_wrap{
+    height: 50px;
+    border-bottom: 1px dotted black;
+}
+#main_footer{
+    margin: 0 auto;
+    width: 1300px;
+    position: relative;
+    height: 50px;
+}
+#main_footer ul{
+    position: absolute;
+    width: 1200px;
+    left: 100px;
+    overflow: hidden;
+}
+#main_footer ul li{
+    float: left;
+    line-height: 50px;
+}
+#main_footer ul li a{
+    border-right: 1px solid black;
+    padding: 0 30px;
+}
+.ms:hover{
+    
+}

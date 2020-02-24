@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ppopkey!</title>
+</head>
+<style>
+    .frame {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    .number_panel {
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    .number_panel span {
+        vertical-align: middle;
+        line-height: 600px;
+        font-size: 300px;
+    }
+</style>
+
+<script>
+    window.onload = function(){
+        var btn1 = document.getElementsByClassName("btn_start")[0];
+        var btn2 = document.getElementsByClassName("btn_stop")[0];
+        btn1.addEventListener("click",click_start_controller);
+        btn2.addEventListener("click",click_stop_controller);
+    }
+    
+    function click_start_controller(event){
+        var input = document.getElementsByClassName("input_number")[0].value;
+        window.timer_id = setInterval(function(){
+            this.click_model(input);
+        },20);
+    }
+    
+    function click_stop_controller(event){
+        clearInterval(window.timer_id);
+    }
+    
+    function click_model(number) {
+        var random_val = parseInt(Math.random()*number+1);
+        var num_panel = document.getElementsByClassName("number_panel")[0];
+        var span_panel = num_panel.getElementsByTagName("span")[0];
+        span_panel.innerHTML = random_val;
+        
+    }
+</script>
+
+<body>
+    <div class="frame">
+        <div class="number_panel">
+            <span>0</span>
+        </div>
+        <div class="input_panel">
+            <span>참여인원: </span><input type="text" class="input_number"> <input type="button" value="시작" class="btn_start"> <input type="button" value="멈춤" class="btn_stop">
+        </div>
+    </div>
+</body></html>
